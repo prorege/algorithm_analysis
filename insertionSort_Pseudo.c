@@ -1,7 +1,7 @@
 // #include <stdio.h>
 
 // InsertionSort(A, n){//A라는 배열과 정수 n(원소의 개수) 전달
-//     for (i = 2 to n){ //i를 2~n까지 반복
+//     for (i = 1 to n){ //i를 1~n까지 반복
 //         key = A[i]; key에 현재 인덱스의 원소 저장
 //         j=i-1;      j는 바로 직전 인덱스
 //         while(j>0) and (A[j] > key){ 현재 인덱스가 1이 되기 전까지, 동시에 j의 값이 i의 값보다 크다면

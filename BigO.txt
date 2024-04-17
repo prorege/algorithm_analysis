@@ -1,0 +1,2 @@
+insertion Sort : Θ(n^2)
+Merge Sort : Θ(n* log n)
