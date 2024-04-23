@@ -1,23 +1,21 @@
 #include <stdio.h>
+#include <limits.h>
 
-int fibo(int a);
-int memo[100] = {0};
-
+unsigned long long fibo(int n);
+unsigned long long memo[100];
 int main(){
     int n;
     scanf("%d", &n);
-    int f;
-    f = fibo(n);
-    printf("%d", f);
+    unsigned long long a;
+    a = fibo(n);
+    printf("%lld", a);
+    
     return 0;
 }
-int fibo(int a){
-    if(a<2){
-        return a;
-    }
-        if(memo[a] != 0) { // 메모이제이션된 값이 있으면 바로 반환
-        return memo[a];
-    }
-    memo[a] = fibo(a-2) + fibo(a-1);
-    return memo[a];
+
+unsigned long long fibo(int n){
+    if(n<2) return n;
+    if(memo[n] != 0) return memo[n];
+    memo[n] = fibo(n-2) + fibo(n-2);
+    return memo[n];
 }
